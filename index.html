@@ -1,0 +1,42 @@
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+  <script type="text/javascript" src="scripts.js"></script>
+</head>
+<body>
+
+<div id="side-nav">
+  <form id="api-key-form" data-remote="true">
+    <label for="key">Enter last.fm API key</label><br>
+    <input type="text" name="key" id="key">
+    <input type="submit" value="Set key" data-remote="true">
+  </form>
+  <form id="artist-name-form" data-remote="true">
+    <label for="artist-name">Enter artist to retrieve similar artists</label><br>
+    <input type="text" name="artist-name" id="artist-name">
+    <input type="submit" value="Submit" data-remote="true">
+  </form>
+
+  <span id="buttons"><button type="button" id="more-artists">more artists</button><button type="button" id="reset">reset</button>
+
+  <br>
+  <h5>Hover over things for more info</h5>
+  </span>
+  
+
+  </div>
+  <div id="main">
+    <h4>Similar artist tree</h4>
+    <div id="svg-canvas">
+      <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="450" viewbox="0 0 1000 450">
+      <g xmlns="http://www.w3.org/2000/svg" id="tag-texts">
+      </g>
+      </svg>
+    </div>
+    <h4>Top tags</h4>
+    <div id="tags">
+    </div>
+  </div>
+</body>
+</html>

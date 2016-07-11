@@ -1,0 +1,55 @@
+body {
+  font-family: "Consolas", monospace;
+}
+
+#side-nav {
+  width:300px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+#main {
+  width: 1000px;
+  display: none;
+}
+
+#buttons {
+  display: none;
+}
+
+#svg-canvas {
+  display:inline-block;
+  vertical-align: top;
+  width: 1000px;
+}
+
+#tags {
+  font-family: "Consolas", monospace;
+  display: inline-block;
+  width: 1000px;
+  height: 450px;
+  overflow: hidden;
+}
+
+.tag {
+  color: blue;
+}
+
+label {
+  font-size:12px;
+  font-weight: bold;
+}
+
+circle:hover {
+  fill: blue;
+}
+
+.labels {
+  display: none;
+  color: blue;
+}
+
+g:hover .labels {
+  display: inherit;
+  color: blue;
+}
